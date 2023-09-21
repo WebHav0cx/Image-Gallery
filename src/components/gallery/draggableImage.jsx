@@ -14,7 +14,7 @@ const DraggableImage = ({ id, src, alt, isDropped }) => {
         isDropped ? "bg-gray-300" : ""
       }`}
     >
-      <img src={src} alt={alt} className="w-[343px] h-[343px] object-cover" />
+      <img src={src} alt={alt} className="w-full h-[343px] object-cover" />
       <div className="p-2 bg-gray-100">
         <p className="text-sm text-gray-700">{alt}</p>
       </div>
