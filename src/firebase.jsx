@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDQkR3KmmK03B3E-0gKk2pfU7TGWCJ851E",
-  authDomain: "image-gallery-abb55.firebaseapp.com",
-  projectId: "image-gallery-abb55",
-  storageBucket: "image-gallery-abb55.appspot.com",
-  messagingSenderId: "699108457096",
-  appId: "1:699108457096:web:b80ea8f83324dc3e72fd3d",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
